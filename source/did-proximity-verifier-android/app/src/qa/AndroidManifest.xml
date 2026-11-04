@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    QA-only manifest overlay for Maestro E2E automation.
+
+    DeviceEngagementActivity is normally reached in-process from Home and reads the wallet's
+    engagement code with the camera. Camera scanning cannot be automated, so the qa flavor exports
+    the activity and the test runner injects the engagement string directly via
+    "adb shell am start" with an extra_payload string extra.
+
+    NfcEngagementActivity has the same problem and no workaround at all: an NFC tap cannot be
+    produced by Maestro on any device. The qa flavor exports it so the runner can inject a
+    Handover Select (and optionally a Handover Request) as base64url string extras, which the
+    screen feeds through the real HandoverMessages codec rather than around it.
+
+    This overlay applies to the qa flavor only. prod builds keep exported="false".
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application>
+
+        <activity
+            android:name=".ui.engagement.DeviceEngagementActivity"
+            android:exported="true"
+            tools:replace="android:exported" />
+
+        <activity
+            android:name=".ui.engagement.NfcEngagementActivity"
+            android:exported="true"
+            tools:replace="android:exported" />
+    </application>
+
+</manifest>

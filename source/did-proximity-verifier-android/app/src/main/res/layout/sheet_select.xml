@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_sheet_white"
+    android:orientation="vertical"
+    android:paddingTop="12dp"
+    android:paddingBottom="24dp">
+
+    <View
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_sheet_grabber" />
+
+    <TextView
+        android:id="@+id/sheetTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pretendard_semibold"
+        android:paddingHorizontal="24dp"
+        android:paddingBottom="4dp"
+        android:textColor="@color/brand_text_primary"
+        android:textSize="18sp"
+        tools:text="BLE Transfer Mode" />
+
+    <TextView
+        android:id="@+id/sheetDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pretendard_regular"
+        app:lineHeight="19.5sp"
+        android:paddingHorizontal="24dp"
+        android:paddingBottom="12dp"
+        android:textColor="@color/brand_text_secondary"
+        android:textSize="13sp"
+        tools:text="Preferred BLE role for this reader." />
+
+    <LinearLayout
+        android:id="@+id/sheetItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+</LinearLayout>

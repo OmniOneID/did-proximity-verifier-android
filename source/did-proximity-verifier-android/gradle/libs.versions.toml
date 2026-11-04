@@ -1,0 +1,37 @@
+[versions]
+agp = "9.1.0"
+appcompat = "1.7.1"
+material = "1.13.0"
+activity = "1.13.0"
+constraintlayout = "2.2.1"
+lifecycleViewmodel = "2.9.4"
+lifecycleLivedata = "2.9.4"
+hilt = "2.59.2"
+gson = "2.13.2"
+zxingAndroidEmbedded = "4.3.0"
+spongycastle = "1.54.0.0"
+upokecenterCbor = "4.5.6"
+annotation = "1.9.1"
+junit = "4.13.2"
+
+[libraries]
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+lifecycle-viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel", version.ref = "lifecycleViewmodel" }
+lifecycle-livedata = { module = "androidx.lifecycle:lifecycle-livedata", version.ref = "lifecycleLivedata" }
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
+hilt-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+zxing-android-embedded = { module = "com.journeyapps:zxing-android-embedded", version.ref = "zxingAndroidEmbedded" }
+spongycastle-core = { module = "com.madgag.spongycastle:core", version.ref = "spongycastle" }
+spongycastle-prov = { module = "com.madgag.spongycastle:prov", version.ref = "spongycastle" }
+upokecenter-cbor = { module = "com.upokecenter:cbor", version.ref = "upokecenterCbor" }
+annotation = { module = "androidx.annotation:annotation", version.ref = "annotation" }
+junit = { module = "junit:junit", version.ref = "junit" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }

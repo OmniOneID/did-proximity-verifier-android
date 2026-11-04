@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingVertical="12dp">
+
+    <TextView
+        android:id="@+id/issuerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/pretendard_semibold"
+        app:lineHeight="19.6sp"
+        android:textColor="@color/brand_text_primary"
+        android:textSize="14sp"
+        android:visibility="gone"
+        tools:text="OpenDID Issuer"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/issuerDid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:breakStrategy="simple"
+        android:fontFamily="monospace"
+        android:hyphenationFrequency="none"
+        app:lineHeight="19.375sp"
+        android:textColor="@color/brand_text_secondary"
+        android:textSize="12.5sp"
+        tools:text="did:omn:issuer" />
+</LinearLayout>

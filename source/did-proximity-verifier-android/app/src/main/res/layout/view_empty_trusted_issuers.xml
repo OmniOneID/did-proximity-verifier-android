@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/pretendard_bold"
+        android:letterSpacing="-0.011"
+        android:text="@string/trusted_issuers_empty_title"
+        android:textColor="@color/brand_text_primary"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/emptyHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pretendard_regular"
+        android:gravity="center"
+        app:lineHeight="22.4sp"
+        android:maxWidth="260dp"
+        android:textColor="@color/brand_text_secondary"
+        android:textSize="14sp"
+        tools:text="Tap Refresh Trusted Issuers below to fetch the registry." />
+</LinearLayout>

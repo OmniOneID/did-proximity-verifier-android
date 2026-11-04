@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:background="@drawable/bg_transport_row"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="14dp"
+    android:paddingEnd="8dp">
+
+    <FrameLayout
+        android:id="@+id/transportCheckBoxTouch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <org.omnione.did.proximity.verifier.ui.common.widget.BrandCheckBox
+            android:id="@+id/transportCheckBox"
+            android:layout_width="22dp"
+            android:layout_height="22dp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/transportBadge"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/bg_count_badge"
+        android:fontFamily="@font/pretendard_bold"
+        android:gravity="center"
+        android:textColor="@color/brand_primary_dark"
+        android:textSize="11.5sp"
+        tools:text="1" />
+
+    <TextView
+        android:id="@+id/transportLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:fontFamily="@font/pretendard_medium"
+        android:maxLines="1"
+        android:textColor="@color/brand_text_primary"
+        android:textSize="14.5sp"
+        tools:text="BLE" />
+
+    <ImageView
+        android:id="@+id/transportHandle"
+        android:layout_width="36dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="12dp"
+        android:contentDescription="@string/settings_transports_title"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="12dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_drag" />
+</LinearLayout>

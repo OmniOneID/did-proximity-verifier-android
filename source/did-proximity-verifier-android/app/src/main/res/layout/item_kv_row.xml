@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingVertical="10dp">
+
+    <TextView
+        android:id="@+id/kvLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pretendard_medium"
+        android:letterSpacing="0.027"
+        android:textColor="@color/brand_text_secondary"
+        android:textSize="11sp"
+        tools:text="Issuing Country" />
+
+    <TextView
+        android:id="@+id/kvValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/pretendard_regular"
+        app:lineHeight="21sp"
+        android:textColor="@color/brand_text_primary"
+        android:textSize="14sp"
+        tools:text="FC" />
+
+    <TextView
+        android:id="@+id/kvNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/pretendard_regular"
+        app:lineHeight="18.75sp"
+        android:textColor="@color/brand_text_secondary"
+        android:textSize="12.5sp"
+        android:visibility="gone"
+        tools:text="The issuer is not in the trusted issuer list." />
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/brand_primary">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingHorizontal="8dp">
+
+        <ImageView
+            android:id="@+id/appBarLeft"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start|center_vertical"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/common_back"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_back"
+            android:tint="@color/white"
+            tools:ignore="UseAppTint" />
+
+        <TextView
+            android:id="@+id/appBarTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:fontFamily="@font/pretendard_semibold"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingHorizontal="48dp"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            tools:text="Proximity Verifier" />
+
+        <ImageView
+            android:id="@+id/appBarRight"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end|center_vertical"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:tint="@color/white"
+            android:visibility="gone"
+            tools:ignore="ContentDescription,UseAppTint" />
+    </FrameLayout>
+</FrameLayout>

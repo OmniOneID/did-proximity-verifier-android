@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SectionTitleView">
+        <attr name="sectionTitle" format="string" />
+        <attr name="sectionBadge" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="BrandCheckBox">
+        <attr name="checkBoxSmall" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="RequestChip">
+        <attr name="chipText" format="string" />
+    </declare-styleable>
+
+</resources>

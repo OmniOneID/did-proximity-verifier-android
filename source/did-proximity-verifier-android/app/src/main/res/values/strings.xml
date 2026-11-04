@@ -1,0 +1,114 @@
+<resources>
+    <string name="app_name">Proximity Verifier</string>
+
+    <string name="common_ok">OK</string>
+    <string name="common_error">Error</string>
+    <string name="common_cancel">Cancel</string>
+    <string name="common_close">Close</string>
+    <string name="common_done">Done</string>
+    <string name="common_back">Back</string>
+    <string name="common_menu">Menu</string>
+    <string name="progress_default_message">Please wait a moment</string>
+
+    <string name="home_title">Proximity Verifier</string>
+    <string name="home_group_pid_title">Request PID</string>
+    <string name="home_attrs_selected">%1$d of %2$d attributes selected</string>
+    <string name="home_scan_qr">Scan QR</string>
+
+    <string name="doc_pid">Personal Identification Data (PID)</string>
+    <string name="doc_short_pid">PID</string>
+
+    <string name="chip_full_pid">Full</string>
+    <string name="chip_custom_pid">Custom</string>
+
+
+    <string name="custom_attrs_title_pid">Custom PID request</string>
+    <string name="custom_attrs_section">Requested Attributes</string>
+    <string name="group_head_attributes">Attributes</string>
+    <string name="select_all">Select all</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="settings_group_general">General</string>
+    <string name="settings_group_retrieval_options">Data retrieval options</string>
+    <string name="settings_trusted_issuers">Trusted Issuers</string>
+    <string name="settings_skip_issuer_auth">Skip issuer verification</string>
+    <string name="settings_ble_mode_title">BLE Transfer Mode</string>
+    <string name="settings_ble_mode_description">Preferred BLE role for this reader. Applied only when the holder advertises both modes.</string>
+    <string name="settings_ble_mode_central">Central client mode</string>
+    <string name="settings_ble_mode_peripheral">Peripheral server mode</string>
+    <string name="settings_use_l2cap">Use BLE L2CAP if available</string>
+    <string name="settings_group_transport">Transport</string>
+    <string name="settings_transports_title">Transports to use</string>
+    <string name="settings_transports_caption">Enabled transports are tried in order. Drag the handle to change the order.</string>
+    <string name="settings_transports_separator">"  \u2192  "</string>
+    <string name="settings_transports_only">Only %1$s is used.</string>
+    <string name="transport_ble">BLE</string>
+    <string name="transport_wifi_aware">Wi-Fi Aware</string>
+    <string name="transport_nfc">NFC</string>
+
+    <string name="trusted_issuers_title">Trusted Issuers</string>
+    <string name="trusted_issuers_section">Cached Issuers</string>
+    <string name="trusted_issuers_last_updated">Last updated: %1$s</string>
+    <string name="trusted_issuers_refresh">Refresh Trusted Issuers</string>
+    <string name="trusted_issuers_empty_title">No Trusted Issuers yet</string>
+    <string name="trusted_issuers_empty_hint">Tap %1$s below to fetch the registry.</string>
+    <string name="server_url_title">Server URL</string>
+    <string name="server_url_section_custom">Custom</string>
+    <string name="server_url_section_default">Default</string>
+    <string name="server_url_all_default">All Default</string>
+    <string name="server_url_all_custom">All Custom</string>
+    <string name="server_url_row_default">Default</string>
+    <string name="server_url_row_custom">Custom</string>
+    <string name="server_url_empty_custom">No custom endpoints.\nTap Custom on an endpoint below to edit it.</string>
+    <string name="server_url_empty_default">All endpoints are set to custom.</string>
+    <string name="server_url_label_tas">TAS</string>
+    <string name="server_url_label_api_gw">API Gateway</string>
+    <string name="server_url_error_format">Enter a valid URL starting with http:// or https://.</string>
+    <string name="server_url_error_port">Port must be between 1 and 65535.</string>
+    <string name="server_url_error_empty">Enter a URL.</string>
+    <string name="server_url_save">Save</string>
+    <string name="server_url_save_failed_title">Save Failed</string>
+    <string name="server_url_save_failed_message">Failed to save. Try again.</string>
+
+    <string name="engagement_title">Device Engagement</string>
+    <string name="engagement_hint">Please scan the QR code inside the square.</string>
+    <string name="engagement_permission_message">Camera access is required to scan the QR code. Enable the camera permission in system settings and try again.</string>
+    <string name="engagement_invalid_message">This QR code is not a valid device engagement.</string>
+    <string name="engagement_camera_unavailable_message">The camera is unavailable. Close other apps using the camera and try again.</string>
+
+    <string name="transfer_title">Transfer Status</string>
+    <string name="transfer_section_request">Request</string>
+    <string name="transfer_section_connection">Connection State</string>
+    <string name="transfer_scope_full">Full</string>
+    <string name="transfer_scope_custom">%1$d of %2$d</string>
+    <string name="transfer_status_connecting">Connecting...</string>
+    <string name="transfer_status_connected">Connected</string>
+    <string name="transfer_status_disconnected">Disconnected</string>
+    <string name="transfer_error_message">The connection was interrupted. Please try again.</string>
+    <string name="transfer_error_unexpected">An unexpected error occurred.</string>
+    <string name="transfer_location_message">Location services are required for Bluetooth scanning. Enable them in system settings and try again.</string>
+    <string name="transfer_permission_message">Bluetooth access is required to connect to the holder\'s device. Enable the Bluetooth permission in system settings and try again.</string>
+    <string name="transfer_bluetooth_off_message">Bluetooth is required to connect to the holder\'s device. Enable Bluetooth in system settings and try again.</string>
+    <string name="transfer_nfc_not_recommended_title">NFC not recommended</string>
+    <string name="transfer_nfc_not_recommended_message">Devices connected by QR code can\'t transfer over NFC. Choose another transport in Settings.</string>
+    <string name="transfer_error_transport_mismatch">No compatible transport is available with the current Transport settings.</string>
+
+    <string name="documents_title">Received Credentials</string>
+    <string name="documents_section_result">Result</string>
+    <string name="documents_returned_count">Number of credentials returned: %1$d</string>
+    <string name="group_head_verification">Verification</string>
+
+    <string name="home_sheet_title">Device engagement method</string>
+    <string name="home_sheet_description">Choose how to start the session with the holder\'s device.</string>
+    <string name="home_sheet_scan_qr">Scan QR</string>
+    <string name="home_sheet_tap_nfc">Tap NFC</string>
+    <string name="home_start_verification">Start Verification</string>
+
+    <string name="nfc_engagement_title">Device Engagement</string>
+    <string name="nfc_ready_title">Ready to tap</string>
+    <string name="nfc_ready_message">Hold the holder\'s device to the back of this phone.</string>
+    <string name="nfc_unavailable_message">NFC is required to start this session. Enable NFC in system settings and try again.</string>
+    <string name="nfc_timeout_message">No device was detected. Please try again.</string>
+    <string name="nfc_transfer_title">Keep the devices together</string>
+    <string name="nfc_transfer_message">Transferring over NFC. Hold the holder\'s device in place until the documents arrive.</string>
+</resources>

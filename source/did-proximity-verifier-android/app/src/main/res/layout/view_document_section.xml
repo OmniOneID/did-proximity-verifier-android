@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <org.omnione.did.proximity.verifier.ui.common.widget.SectionTitleView
+        android:id="@+id/doctypeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_card_white"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="4dp">
+
+        <include
+            android:id="@+id/verificationHead"
+            layout="@layout/view_group_head" />
+
+        <LinearLayout
+            android:id="@+id/verificationContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_card_white"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="4dp">
+
+        <include
+            android:id="@+id/attributesHead"
+            layout="@layout/view_group_head" />
+
+        <LinearLayout
+            android:id="@+id/attributesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </LinearLayout>
+</LinearLayout>

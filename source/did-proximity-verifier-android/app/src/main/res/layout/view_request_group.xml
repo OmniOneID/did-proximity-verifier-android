@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <org.omnione.did.proximity.verifier.ui.common.widget.SectionTitleView
+        android:id="@+id/groupSectionTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_card_white"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <org.omnione.did.proximity.verifier.ui.common.widget.RequestChip
+                android:id="@+id/chipFull"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <org.omnione.did.proximity.verifier.ui.common.widget.RequestChip
+                android:id="@+id/chipCustom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/customCaption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/pretendard_regular"
+            android:textColor="@color/brand_text_secondary"
+            android:textSize="12.5sp"
+            android:visibility="gone"
+            tools:text="4 of 7 attributes selected"
+            tools:visibility="visible" />
+    </LinearLayout>
+</LinearLayout>
